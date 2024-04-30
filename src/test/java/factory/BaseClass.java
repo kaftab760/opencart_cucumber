@@ -22,6 +22,7 @@ public class BaseClass {
 	static Properties p;
 	static Logger logger;
 
+	@SuppressWarnings("deprecation")
 	public static WebDriver initilizeBrowser() throws IOException {
 		if (getProperties().getProperty("execution_env").equalsIgnoreCase("remote")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
